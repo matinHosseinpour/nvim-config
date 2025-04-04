@@ -123,7 +123,15 @@ return {
     vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find Buffers" })
     vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help Tags" })
   end,
-}
+},
+-- 	{
+--   "ellisonleao/gruvbox.nvim",
+--   priority = 1000,
+--   config = function()
+--     vim.opt.background = "dark"
+--     vim.cmd.colorscheme("gruvbox")
+--   end,
+-- },
 
 }
 
