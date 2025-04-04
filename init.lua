@@ -5,12 +5,18 @@ vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.clipboard = "unnamedplus"
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true })
+
+-- Window split + navigation
 vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", { desc = "Vertical Split" })
 vim.keymap.set("n", "<leader>sh", ":split<CR>", { desc = "Horizontal Split" })
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left split" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom split" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to top split" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })
+
+-- Spell checker
+vim.opt.spell = true
+vim.opt.spelllang = { "en_us" }
 
 -- Lazy.nvim bootstrap
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
